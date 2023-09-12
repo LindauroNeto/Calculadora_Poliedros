@@ -1,2 +1,2 @@
-# Calculadora_Poliedros
-Calculadora que recolhes os dados de comprimento, largura e profundidade de um poliedro e traz o resultado do volume do poliedro.
+# Calculadora do Volume de Poliedros
+Meu primeiro pequeno projeto em JavaScript, na tentativa de aperfeiçoar o uso de Objects e Functions, o site ainda está sujeito a mudanças.
