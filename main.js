@@ -15,7 +15,7 @@ sentBtn.addEventListener('click', function(e){
     }
 
     let volume = poliedro.comp * poliedro.larg * poliedro.prof
-    cxVolume.textContent = volume
+    cxVolume.textContent = volume + ' cm³'
 
     e.preventDefault()
 })
