@@ -11,34 +11,38 @@
     <div id="titulo">
         <h1>Calculadora do Volume de Poliedros Retangulares</h1>
     </div>
-        <div class="caixa">
-            <div class="sub-caixa">
-                <h2>Comprimento: </h2><button id="btn-compr">Escrever</button>
+        <form action="" method="post">
+            <div class="caixa">
+                <h2>Comprimento: </h2>
+                <div class="sub-caixa">
+                    <input type="number" id="comp" class="info"><p>cm</p>
+                </div>
             </div>
-            <p><span id="compr">???</span> cm</p>
-        </div>
-
-        <div class="caixa">
-            <div class="sub-caixa">
-                <h2>Largura: </h2><button id="btn-larg">Escrever</button>
+    
+            <div class="caixa">
+                <h2>Largura: </h2>
+                <div class="sub-caixa">
+                    <input type="number" id="larg" class="info"><p>cm</p>
+                </div>
             </div>
-            <p><span id="larg">???</span> cm</p>
-        </div>
-
-        <div class="caixa">
-            <div class="sub-caixa">
-                <h2>Profundiade: </h2><button id="btn-prof">Escrever</button>
+    
+            <div class="caixa">
+                <h2>Profundiade: </h2>
+                <div class="sub-caixa">
+                    <input type="number" id="prof" class="info"><p>cm</p>
+                </div>
             </div>
-            <p><span id="prof">???</span> cm</p>
-        </div>
-
-        <div class="caixa">
-            <div class="sub-caixa">
-                <h2>Volume da figura:</h2><button id="btn-vol">Gerar resultado</button>
+    
+            <div id="grade-butoes">
+                <button type="submit" id="sentBtn" class="botao">Enviar</button>
+                <button type="reset" id="resetBtn" class="botao">Limpar</button>
             </div>
-            <p><span id="vol">???</span> cm³</p>
-        </div>
 
+            <div class="caixa">
+                <h2>Volume da figura:</h2>
+                <span id="volu">???</span>
+            </div>
+        </form>
     <script src="main.js"></script>
 </body>
 </html>

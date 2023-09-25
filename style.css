@@ -29,11 +29,28 @@ body {
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.6);
 }
 
-.caixa p {font-size: 22px;}
+.caixa h2 {font-size: 30px;}
+
+.info {width: 160px; padding: 2px;}
 
 .sub-caixa {
     display: inline-flex;
+    align-items: center;
 }
 
-.sub-caixa button {/* width: 80px; */ float: right; justify-content: left; margin-left: 20px; padding: 5px;}
-.sub-caixa h2 {float: left; font-size: 30px;}
+.sub-caixa p {font-size: 20px; margin-left: 10px;}
+
+#grade-butoes {
+    display: flex;
+    max-width: 90%;
+    width: 200px;
+    place-items: center;
+    margin: 0 auto;
+}
+
+.botao {
+    margin: 5px;
+    padding: 4px;
+    font-size: 20px;
+    cursor: pointer;
+}

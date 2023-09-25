@@ -1,29 +1,25 @@
-var poliedro = {
-    comprimento: document.querySelector('#btn-compr'),
-    largura: document.querySelector('#btn-larg'),
-    profundidade: document.querySelector('#btn-prof'),
-    volum: document.querySelector('#btn-vol')
-}
+let cxComprimento = document.querySelector('#comp')
+let cxLargura = document.querySelector('#larg')
+let cxProfundidade = document.querySelector('#prof')
+let cxVolume = document.querySelector('#volu')
 
-var valores = {
-    compri: document.querySelector('#compr'),
-    larg: document.querySelector('#larg'),
-    prof: document.querySelector('#prof'),
-    vol: document.querySelector('#vol')
-}
+let sentBtn = document.querySelector('#sentBtn')
+let resetBtn = document.querySelector('#resetBtn')
 
-// function C(){
-//     valores.compri.textContent = prompt("Valor do comprimento:")
-// }
+sentBtn.addEventListener('click', function(e){    
+    var poliedro = {
+        comp: cxComprimento.value,
+        larg: cxLargura.value,
+        prof: cxProfundidade.value,
+        volu: cxVolume.value
+    }
 
-const Volume = (a, b, c) => a * b * c
+    let volume = poliedro.comp * poliedro.larg * poliedro.prof
+    cxVolume.textContent = volume
 
-const C = () => valores.compri.textContent = prompt("Valor do comprimento:")
-const L = () => valores.larg.textContent = prompt("Valor da largura:")
-const P = () => valores.prof.textContent = prompt("Valor da produndidade:")
-const V = () => valores.vol.textContent = Volume(valores.compri.textContent, valores.larg.textContent, valores.prof.textContent)
+    e.preventDefault()
+})
 
-poliedro.comprimento.addEventListener('click', C)
-poliedro.largura.addEventListener('click', L)
-poliedro.profundidade.addEventListener('click', P)
-poliedro.volum.addEventListener('click', V)
+resetBtn.addEventListener('click', function(){
+    cxVolume.textContent = '???'
+})
