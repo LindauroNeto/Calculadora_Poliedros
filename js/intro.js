@@ -7,19 +7,16 @@ let cili = document.querySelector('#cili')
 let piraRet = document.querySelector('#piraRet')
 
 let btnEnviar = document.querySelector('#btnEnviar')
+let btnMarcar = document.querySelector('#btnMarcar')
 
-selecFig.addEventListener('click', function(e) {
-    if (selecFig.textContent == poliRet) {
+btnMarcar.addEventListener('click', function(e){
+    if (selecFig.value == poliRet.value) {
         formulario.setAttribute('action', 'polieRet.html')
-    } else if (selecFig.textContent == cili) {
+    } else if (selecFig.value == cili.value) {
         formulario.setAttribute('action', 'cili.html')
-    } else if (selecFig.textContent == piraRet) {
+    } else if (selecFig.value == piraRet.value) {
         formulario.setAttribute('action', 'piraRet.html')
     }
 
     e.preventDefault()
-})
-
-poliRet.addEventListener('click', function(){
-    formulario.setAttribute('action', 'polieRet.html')
 })
