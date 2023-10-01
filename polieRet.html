@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Segunda tentaiva de criar um site mais formidável que calcula o voulume de um poliedro retangular">
+    <title>Calculadora Volume</title>
+    <link rel="stylesheet" href="css/poli.css">
+</head>
+<body>
+    <div id="titulo">
+        <h1>Calculadora do Volume de Poliedros Retangulares</h1>
+    </div>
+    <main>
+        <form action="" method="post">
+            <div class="caixa">
+                <h2>Comprimento: </h2>
+                <div class="sub-caixa">
+                    <input type="number" id="comp" class="info"><p>cm</p>
+                </div>
+            </div>
+    
+            <div class="caixa">
+                <h2>Largura: </h2>
+                <div class="sub-caixa">
+                    <input type="number" id="larg" class="info"><p>cm</p>
+                </div>
+            </div>
+    
+            <div class="caixa">
+                <h2>Profundiade: </h2>
+                <div class="sub-caixa">
+                    <input type="number" id="prof" class="info"><p>cm</p>
+                </div>
+            </div>
+    
+            <div id="grade-butoes">
+                <button type="submit" id="sentBtn" class="botao">Enviar</button>
+                <button type="reset" id="resetBtn" class="botao">Limpar</button>
+            </div>
+
+            <div class="caixa">
+                <h2>Volume da figura:</h2>
+                <span id="volu">???</span>
+            </div>
+        </form>
+    </main>
+    <script src="js/poli.js"></script>
+</body>
+</html>

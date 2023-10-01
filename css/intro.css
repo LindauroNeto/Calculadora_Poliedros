@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#formu {
+    display: flex;
+    max-width: 100%;
+    place-items: center;
+}
+
+#main-caixa {
+    background-color: #fff;
+    display: inline-flex;
+    width: 200px;
+    margin: 30px auto;
+    padding: 10px;
+    place-items: center;
+    border: medium inset #000;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.6);
+}
