@@ -1,22 +1,46 @@
-let formulario = document.querySelector('form')
+function pegarDoDocumento(id) {
+    return document.querySelector(id)
+}
 
-let selecFig = document.querySelector('#selecFig')
+let formulario = pegarDoDocumento('form')
 
-let poliRet = document.querySelector('#poliRet')
-let cili = document.querySelector('#cili')
-let piraRet = document.querySelector('#piraRet')
+let selecFig = pegarDoDocumento('#selecFig')
 
-let btnEnviar = document.querySelector('#btnEnviar')
-let btnMarcar = document.querySelector('#btnMarcar')
+let poliRet = pegarDoDocumento('#poliRet')
+let cili = pegarDoDocumento('#cili')
+let piraRet = pegarDoDocumento('#piraRet')
+
+let btnEnviar = pegarDoDocumento('#btnEnviar')
+let btnMarcar = pegarDoDocumento('#btnMarcar')
 
 btnMarcar.addEventListener('click', function(e){
-    if (selecFig.value == poliRet.value) {
-        formulario.setAttribute('action', 'polieRet.html')
-    } else if (selecFig.value == cili.value) {
-        formulario.setAttribute('action', 'cili.html')
-    } else if (selecFig.value == piraRet.value) {
-        formulario.setAttribute('action', 'piraRet.html')
+    switch (selecFig.value) {
+        case poliRet.value:
+            formulario.setAttribute('action', 'polieRet.html')
+            break;
+
+        case cili.value:
+            formulario.setAttribute('action', 'cili.html')
+            break;
+
+        case piraRet.value:
+            formulario.setAttribute('action', 'piraRet.html')
+            break;
+    
+        default:
+            break;
     }
 
     e.preventDefault()
 })
+
+class Figura {
+    constructor(){
+        comp,
+        larg,
+        altu,
+        volu,
+        raio,
+        volume
+    }
+}

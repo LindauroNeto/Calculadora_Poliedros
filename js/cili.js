@@ -7,14 +7,13 @@ let sentBtn = document.querySelector('#sentBtn')
 let resetBtn = document.querySelector('#resetBtn')
 
 sentBtn.addEventListener('click', function(e){    
-    var poliedro = {
-        raio: cxRaio.value,
-        altu: cxAltu.value,
-        volu: cxVolume.value
-    }
-
-    let volume = (poliedro.raio ** 2) * poliedro.altu * 3.14
-    cxVolume.textContent = volume + ' cm³'
+    var poliedro = new Figura(
+        this.altu = cxAltu.value,
+        this.volu = cxVolume.value,
+        raio = cxRaio.value,
+        this.volume = (this.raio ** 2) * this.altu * 3.14
+    )
+    cxVolume.textContent = poliedro.volume + ' cm³'
 
     e.preventDefault()
 })
