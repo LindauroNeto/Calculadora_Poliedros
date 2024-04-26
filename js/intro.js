@@ -2,16 +2,16 @@ function pegarDoDocumento(id) {
     return document.querySelector(id)
 }
 
-let formulario = pegarDoDocumento('form')
+const formulario = pegarDoDocumento('form')
 
-let selecFig = pegarDoDocumento('#selecFig')
+const selecFig = pegarDoDocumento('#selecFig')
 
-let poliRet = pegarDoDocumento('#poliRet')
-let cili = pegarDoDocumento('#cili')
-let piraRet = pegarDoDocumento('#piraRet')
+const poliRet = pegarDoDocumento('#poliRet')
+const cili = pegarDoDocumento('#cili')
+const piraRet = pegarDoDocumento('#piraRet')
 
-let btnEnviar = pegarDoDocumento('#btnEnviar')
-let btnMarcar = pegarDoDocumento('#btnMarcar')
+const btnEnviar = pegarDoDocumento('#btnEnviar')
+const btnMarcar = pegarDoDocumento('#btnMarcar')
 
 btnMarcar.addEventListener('click', function(e){
     switch (selecFig.value) {
@@ -43,4 +43,4 @@ class Figura {
         raio,
         volume
     }
-}
+}   

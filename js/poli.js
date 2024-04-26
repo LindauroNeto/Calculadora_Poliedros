@@ -1,10 +1,10 @@
-let cxComprimento = document.querySelector('#comp')
-let cxLargura = document.querySelector('#larg')
-let cxProfundidade = document.querySelector('#prof')
-let cxVolume = document.querySelector('#volu')
+const cxComprimento = document.querySelector('#comp')
+const cxLargura = document.querySelector('#larg')
+const cxProfundidade = document.querySelector('#prof')
+const cxVolume = document.querySelector('#volu')
 
-let sentBtn = document.querySelector('#sentBtn')
-let resetBtn = document.querySelector('#resetBtn')
+const sentBtn = document.querySelector('#sentBtn')
+const resetBtn = document.querySelector('#resetBtn')
 
 sentBtn.addEventListener('click', function(e){    
     var poliedro = {

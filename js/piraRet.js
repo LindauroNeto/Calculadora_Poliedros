@@ -1,10 +1,10 @@
-let cxAreaBase = document.querySelector('#areaBase')
-let cxAltu = document.querySelector('#altu')
+const cxAreaBase = document.querySelector('#areaBase')
+const cxAltu = document.querySelector('#altu')
 
-let cxVolume = document.querySelector('#volu')
+const cxVolume = document.querySelector('#volu')
 
-let sentBtn = document.querySelector('#sentBtn')
-let resetBtn = document.querySelector('#resetBtn')
+const sentBtn = document.querySelector('#sentBtn')
+const resetBtn = document.querySelector('#resetBtn')
 
 sentBtn.addEventListener('click', function(e){    
     var poliedro = {
